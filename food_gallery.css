@@ -5,6 +5,8 @@ body {
     color: azure;
     overflow-x: hidden;
     font-family: 'Nunito Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 span {
@@ -19,9 +21,16 @@ span {
     position: relative;
 }
 
+header{
+    background-color: rgb(30, 30, 30);
+    height: 80px;
+    margin-top: -22px;
+}
+
 .logo {
     font-family: 'Nunito Sans', sans-serif;
     margin-left: 40px;
+    padding-top: 15px;
     color: rgb(255, 125, 31);
 }
 
@@ -45,6 +54,7 @@ a:hover {
 
 .open {
     display: none;
+    padding-top: 20px;
 }
 
 .open:hover {
@@ -200,9 +210,13 @@ flex-wrap: wrap;
 
     .open {
         position: absolute;
-        top: 13px;
+        top: 8px;
         right: 40px;
         display: block;
+    }
+
+    header{
+        height: 60px;
     }
 
     .icons {
@@ -260,7 +274,7 @@ flex-wrap: wrap;
 
 @media (max-width:425px) {
     .open {
-        top: 21px;
+        top: 0px;
         right: 15px;
     }
 
@@ -272,7 +286,7 @@ flex-wrap: wrap;
 
     .logo {
         font-size: 25px;
-        margin-top: 10px;
+        padding-top: 15px;
         margin-left: 15px;
     }
     #t1 {
@@ -317,7 +331,11 @@ flex-wrap: wrap;
 
 @media (max-width:375px) {
     .open {
-        top: 9px;
+        top: -8px;
+    }
+
+    header{
+        height: 50px;
     }
 
     .icons {
@@ -325,7 +343,8 @@ flex-wrap: wrap;
     }
 
     .logo {
-        margin-top: 0px;
+        font-size: 17px;
+       padding-top: 20px;
     }
 
     #t3 {
@@ -354,7 +373,7 @@ flex-wrap: wrap;
 
 @media (max-width:320px) {
     .open {
-        top: 5px;
+        top: -10px;
         font-size: 15px;
     }
 
@@ -364,6 +383,7 @@ flex-wrap: wrap;
 
     .logo {
         font-size: 17px;
+        padding-top: 20px;
     }
     
     #t3 {
